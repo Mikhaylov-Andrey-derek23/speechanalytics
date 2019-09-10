@@ -9,7 +9,7 @@ class App extends React.Component{
         }
     }
     componentDidMount(){
-        fetch("https://www.derek23.ru/speechanalytics/api/data.json").then(respon =>{
+        fetch("/api/data.json").then(respon =>{
             return respon.json()
         }).then(data=>{
             this.setState(
